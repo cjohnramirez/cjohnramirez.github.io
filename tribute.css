@@ -1,0 +1,389 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+html, body {
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column; 
+    overflow-x: hidden;
+    min-width: 75px; 
+    background-color: #fcefe7;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: fit-content;
+    margin: 10px auto;
+    width: 100%;
+}
+
+header > img {
+    width: 25px;
+    padding: 0 2%;
+}
+
+header > h1 {
+    letter-spacing: 2px;
+}
+
+h1 {
+    margin: 0;
+    width: 40%;
+    font-size: calc(15px + 1.5vw);
+    color: #1b1b1b;
+}
+
+/* navigation bar */
+
+nav {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 5%;
+}
+
+nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul > li {
+    list-style: none;
+    font-size: calc(6px + 0.5vw);
+    padding: 0 8px;
+}
+
+a:hover {
+    color: #ff5252;
+}
+
+a {
+    text-decoration: none;
+    color: #1b1b1b;
+}
+
+/* main */
+
+.introduction > img {
+    width: 100%;
+}
+
+#description {
+    display: flex;
+    justify-content: space-around;
+    padding: 10%;
+    max-width: 900px;
+    max-height: 200px;
+    margin: auto;
+}
+
+#tribute-info {
+    width: 55vw;
+    font-size: calc(6px + 0.75vw);
+    align-items: center;
+}
+
+#tribute-info > p {
+    text-align: justify;
+}
+
+#title, #title > h1 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: calc(14px + 1vw);
+    width: 80%;
+}
+
+/* infos */
+
+.infos {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 0 10px;
+    width: 70%;
+}
+
+.first-info {
+    margin-right: 20%;
+}
+
+.second-info {
+    width: 50%;
+}
+
+.info-big {
+    padding-top: 10px;
+    font-size: 1.9em;
+    margin: 0;
+    font-weight: 600;
+    color: #fd5314;
+}
+
+.info-small {
+    margin: 0;
+    font-weight: 500;
+}
+
+/* members */
+
+#members {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.members-profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 10px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.profiles {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    min-width: 100px;
+    max-width: 200px;
+    height: auto;
+    background-color: #ffd1b5;
+    color: #1b1b1b;
+    margin: 1%;
+}
+
+.profiles > img {
+    width: 100%;
+    height: 40%;
+    align-items: center;
+    object-fit: cover;
+    height: auto;
+    margin: 0;
+}
+
+.member-title {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.members-image {
+    display: block;
+    aspect-ratio: 1 / 1;
+    margin: auto;
+    width: auto;
+    height: auto;
+}
+
+.profiles:first-of-type {
+    justify-content: center;
+}
+
+.member-text {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: calc(15px + 3vw);
+    width: 100%;
+    height: 50%;
+}
+
+/* text of members' profile */
+
+.member-name {
+    font-size: calc(1.5px + 1.5vw);
+    font-weight: 600;
+}
+
+.member-text-info {
+    padding: 10px;
+}
+
+.member-name, .member-role {
+    text-align: center;
+    margin: auto 0;
+    width: 100%;
+    flex: 1;
+}
+
+.member-role {
+    font-size: calc(7px + 0.30vw);
+}
+
+/* albums */
+
+#img-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95%;
+    margin: 25px auto;
+}
+
+#albums > .bar {
+    width: 50px;
+    height: 10px;
+    background-color: #fd5314;
+    margin: 4% auto;
+}
+
+#albums > h1 {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    font-size: calc(15px + 3vw);
+}
+
+figcaption {
+    margin: 0;
+    text-align: center;
+    font-size: calc(7px + 0.30vw);
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.album-gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.album {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2%;
+    width: 25%;
+    max-width: 200px;
+}
+
+.album > h1 {
+    text-align: center;
+    width: 100%;
+    margin-top: 7px;
+    font-size: calc(2px + 1.5vw);
+}
+
+.album > p {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-size: calc(7px + 0.30vw);
+}
+
+.album > img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: #1b1b1b25 5px 0 20px 2px;
+    max-width: 100%;
+}
+
+/* explore more */
+
+#explore-more {
+    display: flex;
+    margin: 10%;
+    background-color: #ffd1b5;
+    padding: 5%;
+    border-radius: 25px;
+    justify-content: space-between;
+    box-shadow: #1b1b1b0c 5px 0 20px 2px;
+}
+
+.explore-title {
+    width: 30%;
+    font-size: calc(15px + 3vw);
+    text-transform: uppercase;
+}
+
+.explore-title > h1 {
+    width: 100%;
+}
+
+.explore-footer {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.explore-description > p {
+    margin: 0;
+    font-size: calc(2px + 1.5vw);
+    padding-bottom: 5%;
+}
+
+.explore-links {
+    display: flex;
+}
+
+.link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.link > #tribute-link {
+    width: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 5%;
+    max-width: 25px;
+}  
+
+.link > #tribute-link > img {
+    width: 100%;
+    aspect-ratio: 1 / 1 ;
+    object-fit: cover;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* footer */
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    padding: 5%
+}
+
+.footer-text > p {
+    width: 100%;
+    text-align: center;
+
+    font-size: calc(1.75px + 1.25vw);
+    margin: 0;
+}
+
+.footer-text > p:first-of-type {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: calc(2px + 1.5vw);
+}
+
+footer > .bar {
+    width: 50px;
+    height: 10px;
+    background-color: #fd5314;
+    margin: auto;
+}
+
